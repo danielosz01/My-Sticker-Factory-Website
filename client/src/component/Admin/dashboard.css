@@ -1,0 +1,103 @@
+.dashboard {
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+}
+
+.pageContent {
+  margin: 0 25px 40px 25px;
+}
+
+.dashboardContainer {
+  background-color: #f3f6f9;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.dashboardContainer > h1 {
+  color: rgba(0, 0, 0);
+  text-align: left;
+  padding: 1.5rem;
+  margin: 0 25px 40px 25px;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 0px 0px 11px 0px #e5e5e5 !important;
+  background-color: #fff;
+}
+
+.dashboardSummary {
+  display: flex;
+  justify-content: space-between;
+  grid-column-gap: 15px;
+  column-gap: 30px;
+}
+
+.dashboardSummary a:nth-child(1) {
+  background-image: url("../../images/total-user.png");
+}
+.dashboardSummary a:nth-child(2) {
+  background-image: url("../../images/total-product.png");
+}
+.dashboardSummary a:nth-child(3) {
+  background-image: url("../../images/total-order.png");
+}
+.dashboardSummary a:nth-child(4) {
+  background-image: url("../../images/Total-category.png");
+}
+
+.dashboardSummary a {
+  background-color: #fff;
+  flex: 1 1;
+  padding: 35px 20px;
+  text-decoration: none;
+  color: #000;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  box-shadow: 0px 0px 11px 0px #e5e5e5 !important;
+}
+.dashboardSummary .count {
+  font-weight: 800;
+  font-size: 26px;
+  padding-bottom: 5px;
+}
+
+.profile-bar {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 10px;
+  box-shadow: 0px 0px 11px 0px #e5e5e5;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+.profile-bar .name {
+  margin: 5px 20px 0px;
+  font-weight: 900;
+  font-size: 17px;
+  color: #494747;
+}
+.profile-bar .admin {
+  margin: 5px 20px 0px;
+  font-weight: 600;
+  background: #494747;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: fit-content;
+  float: right;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboardContainer {
+    border-left: none;
+  }
+}

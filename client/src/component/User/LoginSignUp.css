@@ -1,0 +1,140 @@
+.LoginSignUpContainer {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 231, 231);
+  position: fixed;
+  top: 0%;
+  left: 0;
+}
+
+.LoginSignUpBox {
+  background-color: white;
+  width: 25vw;
+  height: 70vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.login_signUp_toggle {
+  display: flex;
+  height: 3vmax;
+}
+.login_signUp_toggle > p {
+  color: rgba(0, 0, 0, 0.678);
+  transition: all 0.5s;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.login_signUp_toggle > p:hover {
+  color: #f97805;
+}
+
+.LoginSignUpBox > div > button {
+  background-color: #f97805;
+  height: 3px;
+  width: 50%;
+  border: none;
+  transition: all 0.5s;
+}
+
+.loginForm > a {
+  color: #f97805;
+  text-decoration: none;
+  align-self: flex-end;
+  transition: all 0.5s;
+}
+
+.loginForm > a:hover {
+  color: black;
+}
+
+#registerImage > img {
+  width: 3vmax;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+}
+#registerImage > input {
+  display: flex;
+  padding: 0%;
+}
+
+#registerImage > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 5vh;
+  border: none;
+  margin: 0%;
+  font: 400 0.8vmax cursive;
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: rgba(0, 0, 0, 0.623);
+  background-color: rgb(255, 255, 255);
+}
+
+#registerImage > input::file-selector-button:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.addButton {
+  padding: 10px 10px;
+  font-size: 13px;
+  float: right;
+}
+
+.loginBtn,
+.signUpBtn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 20px;
+  font-size: 16px;
+}
+
+.shiftToLeft {
+  transform: translateX(-100%);
+}
+.shiftToNeutral {
+  transform: translateX(0%);
+}
+
+.shiftToNeutralForm {
+  transform: translateX(0%) translateY(-100%);
+}
+
+.shiftToRight {
+  transform: translateX(100%);
+}
+
+@media screen and (max-width: 600px) {
+  .LoginSignUpContainer {
+    background-color: white;
+  }
+  .LoginSignUpBox {
+    width: 100vw;
+    height: 95vh;
+  }
+  .login_signUp_toggle {
+    height: 5vmax;
+  }
+
+  .loginForm > div > svg,
+  .signUpForm > div > svg {
+    font-size: 2.8vmax;
+  }
+
+  #registerImage > img {
+    width: 8vmax;
+    border-radius: 100%;
+  }
+
+  #registerImage > input::file-selector-button {
+    height: 7vh;
+    font: 400 1.8vmax cursive;
+  }
+}

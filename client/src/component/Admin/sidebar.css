@@ -1,0 +1,58 @@
+.sidebar {
+  background-color: #494747;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .icons {
+  margin-right: 15px;
+}
+
+.sidebar .logo {
+  max-width: 150px;
+  padding: 20px 0;
+}
+
+.sidebar > a > img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.sidebar > a > img:hover {
+  filter: drop-shadow(0 0 10px tomato);
+}
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 30px;
+  transition: all 0.5s;
+}
+.sidebar a:hover {
+  color: tomato;
+  transform: scale(1.1);
+}
+
+.sidebar a > P {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.sidebar a > p > svg {
+  margin-right: 0.5rem;
+}
+
+.sidebar .MuiTypography-root {
+  background-color: #fff !important;
+}
+
+.logout-admin {
+  padding: 20px 30px;
+  bottom: 0;
+  position: absolute;
+}
+.logout-admin p {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}

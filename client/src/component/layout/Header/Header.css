@@ -1,0 +1,29 @@
+.speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 3vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+.header-list {
+  display: flex;
+  column-gap: 40px;
+  padding: 20px;
+}
+
+.align-center {
+  align-items: center;
+}
+.header-list a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.cart img {
+  margin-right: 5px;
+}
